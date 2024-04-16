@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: #000;
+    background: linear-gradient(to right, #ebc8ff, #ffd298);
+    height: 100vh;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-bar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar .logo img {
+    width: 40px;
+    margin: 0px 5px;
+}
+
+#logo-text {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.nav-bar ul li {
+    position: relative;
+    display: inline;
+    margin: 0px 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar ul li:hover {
+    font-weight: 500;
+}
+
+.nav-bar ul li::after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 18px;
+    width: 0px;
+    height: 1px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+.nav-bar ul li:hover::after {
+    width: 100%;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-bar #log-out {
+    position: relative;
+    display: inline;
+    background-color: rgb(247, 247, 247);
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #0000007e;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.nav-bar #log-out:hover {
+    scale: 1.05;
+    background-color: #e4e4e4;
+}
+
+.nav-bar #log-out #pfp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-weight: 600;
+    transform: translate(-50%,-50%);
+    color: #000;
+    font-size: 18px;
+}
+
+
+
+    /* CONTAINER */
+
+.title {
+    display: block;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    margin: 30px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+.course-container .users {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 20%;
+    height: 100%;
+    margin: 0px 5px;
+    box-shadow: 0px 0px 5px #0000004f;
+    padding: 5px;
+}
+
+.course-container .users #users-title {
+    text-align: center;
+}
+
+.course-container .users ul{
+    list-style-type: none;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow-y: scroll ;
+}
+
+.course-container .users ul::-webkit-scrollbar {
+    width: 7px;
+}
+
+.course-container .users ul::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.course-container .users ul::-webkit-scrollbar-thumb {
+    background-color: #d3d3d3;
+    border-radius: 8px;
+}
+
+.course-container .users ul::-webkit-scrollbar-thumb:hover {
+    background-color: #bbbbbb;
+}
+
+.course-container .users ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px #0000004f;
+    margin: 5px 3px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.course-container .users ul li .profile-p {
+    background-color: #d4d4d4;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.course-container .assignments {
+    width: 80%;
+    border-radius: 20px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 5px;
+    box-shadow: 0px 0px 5px #0000004f;
+    padding: 5px;
+}
+
+.course-container .assignments #assignments-title {
+    margin: 0px 50px;
+    text-align: left;
+}
+
+.course-container .assignments ul {
+    padding: 5px 5px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 440px;
+}
+
+.course-container .assignments ul::-webkit-scrollbar {
+    width: 7px;
+}
+
+.course-container .assignments ul::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.course-container .assignments ul::-webkit-scrollbar-thumb {
+    background-color: #d3d3d3;
+    border-radius: 8px;
+}
+
+.course-container .assignments ul::-webkit-scrollbar-thumb:hover {
+    background-color: #bbbbbb;
+}
+
+.course-container .assignments ul .assignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px #0000004f;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+
+.course-container .assignments ul .assignment .as-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    width: 300px;
+}
+
+.course-container .assignments ul .assignment button {
+    background-color: #ebc8ff;
+    border: none;
+    padding: 8px 35px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.course-container .assignments ul .assignment button:hover {
+    box-shadow: 0px 0px 5px #d996ff;
+    scale: 1.03;
+}
