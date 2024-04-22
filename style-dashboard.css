@@ -10,6 +10,7 @@ body {
     background-color: #000;
     background: linear-gradient(to right, #ebc8ff, #ffd298);
     height: 100vh;
+    overflow: hidden;
 }
 
 .nav-bar {
@@ -200,6 +201,13 @@ body {
     margin: 5px 0px;
 }
 
+.container #col1 #zadania .container-title {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .container #col1 #zadania .assignments .assignment {
     display: flex;
     justify-content: space-between;
@@ -252,10 +260,10 @@ body {
 #col2 {
     flex: 1;
     margin: 0px 25px 0px 0px;
+    max-height: 100%;
 }
 
 .container #col2 #lekcje {
-    overflow-wrap:normal;
     margin: 5px 0px;
     background-color: #ffffff;
     padding: 10px;
@@ -265,27 +273,24 @@ body {
     height: 100%
 }
 
-.container #col2 #lekcje .container-title, .container #col2 #zadania .container-title {
+.container #col2 #lekcje .container-title{
     font-size: 30px;
+    text-align: center;
     font-weight: 600;
 }
 
 .container #col2 #lekcje .subjects {
-    display: flex;
-    flex-direction: row;
-    align-items: top;
+    display: grid;
+    height: 470px;
     overflow-y: scroll;
-    list-style-type: none;
-    flex-wrap: wrap;
-    height: 100%;
 }
 
 .container #col2 #lekcje .subjects::-webkit-scrollbar {
-    height: 7px;
+    width: 7px;
 }
 
 .container #col2 #lekcje .subjects::-webkit-scrollbar-track {
-    width: #fff;
+    background-color: transparent;
 }
 
 .container #col2 #lekcje .subjects::-webkit-scrollbar-thumb {
@@ -298,18 +303,18 @@ body {
 }
 
 .container #col2 #lekcje .subjects .class {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
     border: none;
     height: 100px;
-    min-width: 250px;
+    min-width: 243px;
     background-color: transparent;
     padding: 10px;
     box-shadow: 0px 0px 5px #0000004f;
     border-radius: 8px;
     cursor: pointer;
-    margin: 5px 5px 0px 2px;
+    margin: 5px 3px;
 }
 
 .container #col2 #lekcje .subjects .class .subject-title {
