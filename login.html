@@ -9,21 +9,51 @@
     <title>Workly - Login</title>
 </head>
 <body>
-    <div class="container">
-        <span>Log in</span>
-        <div class="socials">
-            <ul>
-                <li><button id="google"><i class="ri-google-fill"></i></button></li>
-                <li><button id="facebook"><i class="ri-facebook-circle-fill"></i></button></li>
-                <li><button id="apple"><i class="ri-apple-fill"></i></button></li>
-            </ul>
+    <div class="container" id="container">
+        <div class="form-container" id="sign-in">
+            <span class="login-text">Sign In</span>
+            <div class="socials">
+                <ul>
+                    <li><button id="in-google"><i class="ri-google-fill"></i></button></li>
+                    <li><button id="in-facebook"><i class="ri-facebook-circle-fill"></i></button></li>
+                    <li><button id="in-apple"><i class="ri-apple-fill"></i></button></li>
+                </ul>
+            </div>
+            <span class="small">or use your email</span>
+            <form>
+                <input type="email" name="email" placeholder="Email" class="input-box">
+                <input type="password" name="password" placeholder="Password" class="input-box">
+                <input type="submit" value="Login" class="submit-btn">
+            </form>
         </div>
-        <span class="small">or use your email</span>
-        <form>
-            <input type="text" name="email" placeholder="Email" class="input-box">
-            <input type="password" name="password" placeholder="Password" class="input-box">
-            <input type="submit" value="Login" class="submit-btn">
-        </form>
+        <div class="form-container" id="sign-up">
+            <span class="login-text">Sign Up</span>
+            <div class="socials">
+                <ul>
+                    <li><button id="up-google"><i class="ri-google-fill"></i></button></li>
+                    <li><button id="up-facebook"><i class="ri-facebook-circle-fill"></i></button></li>
+                    <li><button id="up-apple"><i class="ri-apple-fill"></i></button></li>
+                </ul>
+            </div>
+            <span class="small">or register by using your email</span>
+            <form>
+                <input type="text" name="username" placeholder="Username" class="input-box">
+                <input type="email" name="email" placeholder="Email" class="input-box">
+                <input type="password" name="password" placeholder="Password" class="input-box">
+                <input type="submit" value="Register" class="submit-btn">
+            </form>
+        </div>
+        <div class="toggle-signup toggle">
+            <p class="bold">Already have account?</p>
+            <p>Sign In to get access to all features we offer!</p>
+            <button class="toggle-btn" id="login-btn">Sign In</button>
+        </div>
+        <div class="toggle-signin toggle">
+            <p class="bold">Doesn't have account?</p>
+            <p>Register to get access to all features we offer!</p>
+            <button class="toggle-btn" id="register-btn">Sign Up</button>
+        </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>

@@ -23,26 +23,45 @@
         <button id="log-out">
             <i class="ri-logout-box-r-line" id="pfp"></i>
         </button>
+        <button class="open-nav">
+            <i class="ri-menu-line"></i>
+        </button>
     </div>
-    <div class="course-container">
-        <div class="users">
-            <span class="title" id="users-title"><i class="ri-graduation-cap-fill"></i> Członkowie</span>
-            <ul>
-                <li class="user"><span class="profile-p"></span><span class="username">Jan Nowak</span></li>
-                <li class="user"><span class="profile-p"></span><span class="username">Jan Nowak</span></li>
-            </ul>
+    <div class="small-nav">
+        <ul>
+            <li><a href="#">Strona Główna</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Kalendarz</a></li>
+            <li><a href="#">Ustawienia</a></li>
+            <button id="log-out">
+                Wyloguj się
+            </button>
+        </ul>
+        <i class="ri-close-large-line"></i>
+    </div>
+    <div class="container">
+        <div class="course-title">
+            <span>${nazwa-lekcji}</span>
         </div>
-        <div class="assignments">
-            <span class="title" id="assignments-title">Zadania</span>
-            <ul>
-                <div class="assignment">
-                    <div class="as-info">
-                        <span class="assignment-title">Rozprawka</span>
-                        <span class="assignment-date"><i class="ri-calendar-fill"> </i><span class="date-value">20/04/2024</span></span>
+        <div class="course-container">
+            <div class="users">
+                <span class="title" id="users-title"><i class="ri-graduation-cap-fill"></i> Członkowie</span>
+                <ul>
+                    <li class="user"><i class="ri-user-line"></i><span class="username">Jan Nowak</span></li>
+                </ul>
+            </div>
+            <div class="assignments">
+                <span class="title" id="assignments-title">Zadania</span>
+                <ul>
+                    <div class="assignment">
+                        <div class="as-info">
+                            <span class="assignment-title">Rozprawka</span>
+                            <span class="assignment-date"><i class="ri-calendar-fill"> </i><span class="date-value">20/04/2024</span></span>
+                        </div>
+                        <button>Więcej</button>
                     </div>
-                    <button>Więcej</button>
-                </div>
-            </ul>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
