@@ -10,6 +10,7 @@ body {
     background-color: #000;
     background: linear-gradient(to right, #ebc8ff, #ffd298);
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .nav-bar {
@@ -112,11 +113,78 @@ body {
 
 .small-nav {
     display: none;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
     position: absolute;
-    background-color: #fff;
+    background-color: #ffffffe8;
     top: 0px;
     width: 100%;
     height: 100%;
+    z-index: 2;
+}
+
+.small-nav.active {
+    display: flex;
+}
+
+.small-nav ul {
+    margin-top: 150px;
+    list-style-type: none;
+}
+
+.small-nav ul li {
+    position: relative;
+    margin: 5px 0px;
+    font-size: 30px;
+}
+
+.small-nav ul li a::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #000;
+    left: 0px;
+    top: 100%;
+    transition: all 0.3s ease;
+}
+
+.small-nav ul li:hover a::after{
+    width: 100%;
+}
+
+.small-nav ul button {
+    padding: 10px 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffd298;
+    box-shadow: 0px 0px 5px #0000004f;
+    margin: 10px 0px;
+    transition: all 0.3s ease;
+}
+
+.small-nav ul button:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 5px #ffd2989d;
+}
+
+.small-nav ul li a{
+    display: inline;
+    color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+.small-nav .close-small {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 5px 10px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
     /* CONTAINER */
 
@@ -334,10 +402,6 @@ body {
 
     .nav-bar .open-nav {
         display: inline;
-    }
-
-    .small-nav {
-        display: flex;
     }
 }
 

@@ -23,11 +23,14 @@
         <button id="log-out">
             <i class="ri-logout-box-r-line" id="pfp"></i>
         </button>
-        <button class="open-nav">
+        <button class="open-nav" id="open-nav">
             <i class="ri-menu-line"></i>
         </button>
     </div>
-    <div class="small-nav">
+
+    <!-- SMALL NAV-->
+
+    <div class="small-nav" id="small-nav">
         <ul>
             <li><a href="#">Strona Główna</a></li>
             <li><a href="#">Profil</a></li>
@@ -37,8 +40,13 @@
                 Wyloguj się
             </button>
         </ul>
-        <i class="ri-close-large-line"></i>
+        <button class="close-small" id="close-nav">
+            <i class="ri-close-large-line" id></i>
+        </button>
     </div>
+
+    <!-- CONTAINER -->
+    
     <div class="container">
         <div class="course-title">
             <span>${nazwa-lekcji}</span>
@@ -64,5 +72,6 @@
             </div>
         </div>
     </div>
+    <script src="course.js"></script>
 </body>
 </html>
