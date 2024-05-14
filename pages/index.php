@@ -22,7 +22,7 @@
         <span class="about-text">About us</span>
         <div class="block">
             <div class="left">
-                <img src="members-icon.png">
+                <img src="../assets/members-icon.png">
             </div>
             <div class="right">
                 <span>Many people trusted us!</span>
@@ -32,7 +32,7 @@
         </div>
         <div class="block">
             <div class="left">
-                <img src="dosc.png">
+                <img src="../assets/dosc.png">
             </div>
             <div class="right">
                 <span>A lot of work done!</span>
