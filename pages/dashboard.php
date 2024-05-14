@@ -11,7 +11,7 @@
 <body>
     <div class="nav-bar">
         <div class="logo">
-            <img src="WhiteOutlineLOGO.png">
+            <img src="../assets/WhiteOutlineLOGO.png">
             <span id="logo-text">Workly</span>
         </div>
         <ul>
@@ -89,6 +89,6 @@
             </div>
         </div>
     </div>
-    <script src="dashboard.js"></script>
+    <script src="../scripts/dashboard.js"></script>
 </body>
 </html>
