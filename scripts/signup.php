@@ -17,12 +17,12 @@
         if (mysqli_num_rows($result) == 0) {
             $sql = "INSERT INTO users (`id`, `login`, `email`, `pass`, `name`, `surname`) VALUES (NULL, '$username', '$email', '$password', '$name', '$surname')";
             $createUser = mysqli_query($conn, $sql);
-            header("location: dashboard.php");
+            header("location: ../pages/dashboard.php");
         } else {
-            header("location: login.php");
+            header("location: ../pages/login.php");
         }
         mysqli_close($conn);
     } else {
-        header("location: login.php"); 
+        header("location: ../pages/login.php"); 
     
     }

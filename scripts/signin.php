@@ -12,13 +12,13 @@
         $result = mysqli_query($conn, $findUser);
 
         if (mysqli_num_rows($result) == 1) {
-            header("location: dashboard.php");
+            header("location: ../pages/dashboard.php");
         } else {
-            header("location: login.php");
+            header("location: ../pages/login.php");
         }
         $connect->close();
     } else {
 
-        header("location: login.php"); 
+        header("location: ../pages/login.php"); 
     
     }

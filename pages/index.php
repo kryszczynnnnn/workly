@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="/WhiteOutlineLOGO.png">
-        <link rel="stylesheet" href="style-index.css">
+        <link rel="stylesheet" href="../styles/style-index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <title>Workly - Dashboard</title>
 </head>
 <body>
-    <?php include("normal-nav.html"); ?>
+    <?php include("../includes/normal-nav.html"); ?>
     <div class="container">
         <span class="logo">Workly</span>
         <span class="desc">A new way to make your assignments done and on time! No matter where you are, you can submit them from all around the world! Get your team a new way to send a files, documents and everything else. There's no need to buy anything, beacuse Workly is completely FREE.</span>
         <div class="buttons">
             <button class="more-info">More info</button>
-            <a href="login.php" class="login">Get started</a>
+            <a href="../pages/login.php" class="login">Get started</a>
         </div>
     </div>
     <div class="about">
@@ -66,7 +66,7 @@
             -->
         </ul>
     </div>
-    <?php include("footer.html");   ?>
+    <?php include("../includes/footer.html");   ?>
     <script src="index.js"></script>
 </body>
 </html>
