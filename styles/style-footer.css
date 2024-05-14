@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat";
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #1f1f1f;
+}
+
+.footer .footer-title {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer .map span {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer .map ul {
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.footer .map ul li {
+    margin: 5px 0px;
+}
+
+.footer .map ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .map ul li:hover a {
+    text-decoration: underline;
+}
+
+.socials-footer span{
+    color: #fff;
+    font-weight: 500;
+}
+
+.socials-footer ul {
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.socials-footer ul li {
+    margin: 5px 0px;
+}
+
+.socials-footer ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials-footer ul li:hover a {
+    text-decoration: underline;
+}

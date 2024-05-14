@@ -95,6 +95,10 @@ body {
     outline: none;
 }
 
+.container .form-container form .terms-checkbox #termsconditions{
+    margin: 0px 5px;
+}
+
 .container .form-container form .submit-btn {
     height: 40px;
     margin: 5px;

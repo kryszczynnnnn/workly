@@ -20,10 +20,10 @@
                 </ul>
             </div>
             <span class="small">or use your email</span>
-            <form>
+            <form class="login-form" action="signin.php" method="post">
                 <input type="email" name="email" placeholder="Email" class="input-box">
                 <input type="password" name="password" placeholder="Password" class="input-box">
-                <input type="submit" value="Login" class="submit-btn">
+                <input type="submit" value="Login" class="submit-btn" name="submit">
             </form>
         </div>
         <div class="form-container" id="sign-up">
@@ -36,11 +36,15 @@
                 </ul>
             </div>
             <span class="small">or register by using your email</span>
-            <form>
+            <form class="register-form" action="signup.php" method="post">
                 <input type="text" name="username" placeholder="Username" class="input-box">
+                <input type="text" name="name" placeholder="Name" class="input-box">
+                <input type="text" name="surname" placeholder="Surname" class="input-box">
                 <input type="email" name="email" placeholder="Email" class="input-box">
                 <input type="password" name="password" placeholder="Password" class="input-box">
-                <input type="submit" value="Register" class="submit-btn">
+                <input type="password" name="password-repeat" placeholder="Repeat passowrd" class="input-box">
+                <div class="terms-checkbox"><input type="checkbox" name="terms" id="termsconditions"><label>I accept terms and conditions.</label></div>
+                <input type="submit" name="submit" value="Register" class="submit-btn">
             </form>
         </div>
         <div class="toggle-signup toggle">
