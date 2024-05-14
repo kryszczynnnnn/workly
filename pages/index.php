@@ -67,6 +67,5 @@
         </ul>
     </div>
     <?php include("../includes/footer.html");   ?>
-    <script src="index.js"></script>
 </body>
 </html>

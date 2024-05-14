@@ -58,6 +58,6 @@
             <button class="toggle-btn" id="register-btn">Sign Up</button>
         </div>
     </div>
-    <script src="login.js"></script>
+    <script src="../scripts/login.js"></script>
 </body>
 </html>
