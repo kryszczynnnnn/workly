@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -25,7 +28,7 @@
         </button>
     </div>
     <div class="welcome">
-        <span>Witaj, Krystian!</span>
+        <span>Witaj, <?php echo $_SESSION['name'];?>!</span>
     </div>
     <div class="container">
         <div id="col1">
