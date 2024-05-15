@@ -289,6 +289,10 @@ body {
 }
 
 .course-container .assignments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     border-radius: 20px;
     height: 100%;
@@ -305,11 +309,13 @@ body {
 }
 
 .course-container .assignments ul {
+    width: 95%;
     padding: 5px 5px;
     margin-top: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 440px;
+    border-radius: 8px;
 }
 
 .course-container .assignments ul::-webkit-scrollbar {
@@ -343,11 +349,11 @@ body {
 
 .course-container .assignments ul .assignment .as-info {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     gap: 100px;
-    width: 300px;
+    width: auto;
 }
 
 .course-container .assignments ul .assignment .as-info .assignment-title {
@@ -369,6 +375,93 @@ body {
     scale: 1.03;
 }
 
+.course-container .assignments .create {
+    border: none;
+    background-color: #ebc8ff;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 10px 0px 5px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.course-container .assignments .create:hover {
+    box-shadow: 0px 0px 5px #d996ff;
+    scale: 1.03;
+}
+
+.create-assignment-background {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000a9;
+    z-index: 5;
+}
+
+.create-assignment-background.active {
+    display: flex;
+}
+
+.create-assignment-background .create-assignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.create-assignment-background .create-assignment .header {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.create-assignment-background .create-assignment form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.create-assignment-background .create-assignment form input{
+    border: none;
+    background-color: #ececec;
+    border-radius: 8px;
+    width: 90%;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.create-assignment-background .create-assignment form .desc {
+    border: none;
+    background-color: #ececec;
+    border-radius: 8px;
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    padding: 5px 5px 30px 5px;
+    resize: none;
+}
+
+.create-assignment-background .create-assignment form .submit {
+    background-color: #d996ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.create-assignment-background .create-assignment form .submit:hover{
+    background-color: #b97fdb;
+}
 @media screen and (max-width: 1024px) {
 
     .course-container .assignments ul .assignment {

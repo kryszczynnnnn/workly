@@ -53,22 +53,23 @@
         </div>
         <div class="course-container">
             <div class="users">
-                <span class="title" id="users-title"><i class="ri-graduation-cap-fill"></i> Członkowie</span>
+                <span class="title" id="users-title"><i class="ri-graduation-cap-fill"></i> Members</span>
                 <ul>
                     <li class="user"><i class="ri-user-line"></i><span class="username">Jan Nowak</span></li>
                 </ul>
             </div>
             <div class="assignments">
-                <span class="title" id="assignments-title">Zadania</span>
+                <span class="title" id="assignments-title">Assingnments</span>
                 <ul>
                     <div class="assignment">
                         <div class="as-info">
                             <span class="assignment-title">Rozprawka</span>
                             <span class="assignment-date"><i class="ri-calendar-fill"> </i><span class="date-value">20/04/2024</span></span>
                         </div>
-                        <button>Więcej</button>
+                        <button>More</button>
                     </div>
                 </ul>
+                <button class="create" id="createBtn">Create new assignment</button>
             </div>
             <div class="users" id="users2">
                 <span class="title" id="users-title"><i class="ri-graduation-cap-fill"></i> Członkowie</span>
@@ -78,6 +79,17 @@
             </div>
         </div>
     </div>
-    <script src="course.js"></script>
+    <div class="create-assignment-background" id="create-assignment">
+        <div class="create-assignment">
+            <div class="header">Create assignment</div>
+            <form action="create-assignment.php" method="post">
+                <input type="text" name="title" placeholder="Title">
+                <textarea name="description" placeholder="Description" class="desc"></textarea>
+                <input type="date" name="deadline">
+                <input type="submit" value="Create" name="submit" class="submit">
+            </form>
+        </div>
+    </div>
+    <script src="../scripts/course.js"></script>
 </body>
 </html>
