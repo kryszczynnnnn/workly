@@ -12,50 +12,36 @@
     <title>Workly - Dashboard</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="logo">
-            <img src="../assets/WhiteOutlineLOGO.png">
-            <span id="logo-text">Workly</span>
-        </div>
-        <ul>
-            <li><a href="#">Strona Główna</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Kalendarz</a></li>
-            <li><a href="#">Ustawienia</a></li>
-        </ul>
-        <button id="log-out">
-            <i class="ri-logout-box-r-line" id="pfp"></i>
-        </button>
-    </div>
+    <?php include("../includes/logged-nav.html");?>
     <div class="welcome">
-        <span>Witaj, <?php echo $_SESSION['name'];?>!</span>
+        <span>Hello, <?php echo $_SESSION['name'];?>!</span>
     </div>
     <div class="container">
         <div id="col1">
             <div id="kalendarz">
-                <span id="kalendarz-title">Kalendarz</span>
+                <span id="kalendarz-title">Calendar</span>
                     <ul class="days">
-                        <li>Pon</li>
-                        <li>Wt</li>
-                        <li>Śr</li>
-                        <li>Czw</li>
-                        <li>Pt</li>
-                        <li>Sob</li>
-                        <li>Niedz</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wen</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                        <li>Sun</li>
                     </ul>
                     <div class="calendar-grid" id="calendar">
                     </div>
             </div>
             <div id="zadania">
-                <span class="container-title">Zadania</span>
+                <span class="container-title">Assignments</span>
                 <ul class="assignments">
-                    <div class="assignment">
+                    <div class="assignment" id="39413">
                         <div class="as-info">
                             <span class="assignment-title">Rozprawka</span>
                             <span class="assignment-course">j polski</span>
                             <span class="assignment-date">20/04/2024</span>
                         </div>
-                        <button>Zobacz</button>
+                        <button>More</button>
                     </div>
                     <div class="assignment">
                         <div class="as-info">
@@ -63,7 +49,7 @@
                             <span class="assignment-course">j polski</span>
                             <span class="assignment-date">20/04/2024</span>
                         </div>
-                        <button>Zobacz</button>
+                        <button>More</button>
                     </div>
                     <div class="assignment">
                         <div class="as-info">
@@ -71,24 +57,24 @@
                             <span class="assignment-course">j polski</span>
                             <span class="assignment-date">20/04/2024</span>
                         </div>
-                        <button>Zobacz</button>
+                        <button>More</button>
                     </div>
                 </ul>
             </div>
         </div>
         <div id="col2">
             <div id="lekcje">
-                <span class="container-title">Klasy</span>
+                <span class="container-title">Courses</span>
                 <ul class="subjects">
                     <button class="class">
-                        <span class="subject-title">j polski</span>
+                        <span class="subject-title">Programowanie</span>
                         <div>
-                            <span>Więcej</span>
+                            <span>More</span>
                             <span class="projects-amount">13<i class="ri-file-line"></i></span>
                         </div>
                     </button>
-                    
                 </ul>
+                <a class="more-btn" href="courses.php">See more</a>
             </div>
         </div>
     </div>

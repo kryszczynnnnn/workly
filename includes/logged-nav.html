@@ -1,10 +1,34 @@
-<link rel="stylesheet" href="../styles/style-normalnav.css">
+<link rel="stylesheet" href="../styles/style-loggednav.css">
 <div class="nav-bar">
-        <img src="WhiteOutlineLOGO.png">
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-        <a href="login.php" class="login">Log in</a>
+    <div class="logo">
+        <img src="../assets/WhiteOutlineLOGO.png">
+        <span id="logo-text">Workly</span>
+    </div>
+    <ul>
+        <li><a href="../pages/dashboard.php">Dashboard</a></li>
+        <li><a href="../pages/courses.php">Courses</a></li>
+        <li><a href="../pages/calendar.php">Calendar</a></li>
+        <li><a href="../pages/settings.php">Settings</a></li>
+    </ul>
+    <a id="log-out">
+        <i class="ri-logout-box-r-line" id="pfp"></i>
+    </a>
+    <button class="open-nav" id="open-nav">
+        <i class="ri-menu-line"></i>
+    </button>
 </div>
+<div class="small-nav" id="small-nav">
+    <ul>
+        <li><a href="#">Strona Główna</a></li>
+        <li><a href="#">Profil</a></li>
+        <li><a href="#">Kalendarz</a></li>
+        <li><a href="#">Ustawienia</a></li>
+        <button id="log-out">
+            Wyloguj się
+        </button>
+    </ul>
+    <button class="close-small" id="close-nav">
+        <i class="ri-close-large-line" id></i>
+    </button>
+</div>
+<script src="../scripts/logged-nav.js"></script>

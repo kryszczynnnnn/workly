@@ -78,6 +78,7 @@ body {
     box-shadow: 0px 0px 5px #0000007e;
     border: none;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .nav-bar #log-out:hover {

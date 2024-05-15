@@ -13,88 +13,6 @@ body {
     overflow: hidden;
 }
 
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-}
-
-.nav-bar .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-bar .logo img {
-    width: 40px;
-    margin: 0px 5px;
-}
-
-#logo-text {
-    font-weight: 600;
-    font-size: 25px;
-}
-
-.nav-bar ul li {
-    position: relative;
-    display: inline;
-    margin: 0px 10px;
-    transition: all 0.3s ease;
-}
-
-.nav-bar ul li:hover {
-    font-weight: 500;
-}
-
-.nav-bar ul li::after {
-    position: absolute;
-    content: "";
-    left: 0px;
-    top: 18px;
-    width: 0px;
-    height: 1px;
-    background-color: #000;
-    transition: all 0.3s ease;
-}
-
-.nav-bar ul li:hover::after {
-    width: 100%;
-}
-
-.nav-bar ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-.nav-bar #log-out {
-    position: relative;
-    display: inline;
-    background-color: rgb(247, 247, 247);
-    width: 100px;
-    height: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px #0000007e;
-    border: none;
-    transition: all 0.3s ease;
-}
-
-.nav-bar #log-out:hover {
-    scale: 1.05;
-    background-color: #e4e4e4;
-}
-
-.nav-bar #log-out #pfp {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-weight: 600;
-    transform: translate(-50%,-50%);
-    color: #000;
-    font-size: 18px;
-}
-
 .welcome {
     display: flex;
     justify-content: flex-start;
@@ -115,18 +33,6 @@ body {
     flex-direction: row;
     justify-content: flex-start;
 }
-
-
-/*
-.container {
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 0px;
-}
-*/
-
-
     /* COLUMN 1 */
 
 .container #col1 #kalendarz {
@@ -264,9 +170,12 @@ body {
 }
 
 .container #col2 #lekcje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 5px 0px;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 0px 10px;
     border-radius: 8px;
     box-shadow: 0px 0px 5px #0000004f;
     width: 100%;
@@ -274,14 +183,16 @@ body {
 }
 
 .container #col2 #lekcje .container-title{
+    display: block;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     font-weight: 600;
 }
 
 .container #col2 #lekcje .subjects {
-    display: grid;
-    height: 470px;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
     overflow-y: scroll;
 }
 
@@ -303,11 +214,11 @@ body {
 }
 
 .container #col2 #lekcje .subjects .class {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: none;
-    height: 100px;
+    min-height: 100px;
     min-width: 243px;
     background-color: transparent;
     padding: 10px;
@@ -329,4 +240,21 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.container #col2 #lekcje .more-btn {
+    border: none;
+    margin: 0px 30%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ebc8ff;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.container #col2 #lekcje .more-btn:hover {
+    scale: 1.03;
+    box-shadow: 0px 0px 5px #ebc8ff;
 }

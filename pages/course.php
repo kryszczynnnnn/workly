@@ -9,41 +9,7 @@
     <title>Workly - ${nazwa_lekcji}</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="logo">
-            <img src="WhiteOutlineLOGO.png">
-            <span id="logo-text">Workly</span>
-        </div>
-        <ul>
-            <li><a href="#">Strona Główna</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Kalendarz</a></li>
-            <li><a href="#">Ustawienia</a></li>
-        </ul>
-        <button id="log-out">
-            <i class="ri-logout-box-r-line" id="pfp"></i>
-        </button>
-        <button class="open-nav" id="open-nav">
-            <i class="ri-menu-line"></i>
-        </button>
-    </div>
-
-    <!-- SMALL NAV-->
-
-    <div class="small-nav" id="small-nav">
-        <ul>
-            <li><a href="#">Strona Główna</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Kalendarz</a></li>
-            <li><a href="#">Ustawienia</a></li>
-            <button id="log-out">
-                Wyloguj się
-            </button>
-        </ul>
-        <button class="close-small" id="close-nav">
-            <i class="ri-close-large-line" id></i>
-        </button>
-    </div>
+    <?php include("../includes/logged-nav.html"); ?>
 
     <!-- CONTAINER -->
     

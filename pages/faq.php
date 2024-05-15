@@ -20,6 +20,10 @@
                 <div class="answer">No</div>
             </li>
             <li>
+                <div class="question">How to create course?</div>
+                <div class="answer">Go to the <b>Course</b> page and click <b>Create course</b> button.</div>
+            </li>
+            <li>
                 <div class="question">What is the maximum size of file you can send?</div>
                 <div class="answer">I don't </div>
             </li>
