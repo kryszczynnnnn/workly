@@ -35,10 +35,13 @@
                         <button>More</button>
                     </div>
                 </ul>
-                <button class="create" id="createBtn">Create new assignment</button>
+                <div class="bottom">
+                    <button class="invite" id="inviteBtn">Invite code</button>
+                    <button class="create" id="createBtn">Create assignment</button>
+                </div>
             </div>
             <div class="users" id="users2">
-                <span class="title" id="users-title"><i class="ri-graduation-cap-fill"></i> Członkowie</span>
+                <span class="title" id="users-title"><i class="ri-graduation-cap-fill"></i> Members</span>
                 <ul>
                     <li class="user"><i class="ri-user-line"></i><span class="username">Jan Nowak</span></li>
                 </ul>
@@ -47,6 +50,7 @@
     </div>
     <div class="create-assignment-background" id="create-assignment">
         <div class="create-assignment">
+            <i class="ri-close-large-line" id="closeCreate"></i>
             <div class="header">Create assignment</div>
             <form action="create-assignment.php" method="post">
                 <input type="text" name="title" placeholder="Title">
@@ -54,6 +58,15 @@
                 <input type="date" name="deadline">
                 <input type="submit" value="Create" name="submit" class="submit">
             </form>
+        </div>
+    </div>
+    <div class="invite-background" id="invite-code">
+        <div class="invite-code">
+            <i class="ri-close-large-line" id="closeInvite"></i>
+            <div class="header">Invite code</div>
+            <div class="desc">Share this code with anyone who you want to join the course</div>
+            <div id="code">No valid code</div>
+            <button class="new-code">Generate new code</button>
         </div>
     </div>
     <script src="../scripts/course.js"></script>
