@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
     if (isset($_POST["submit"])) {
 
         include "connect.php";
@@ -17,6 +17,7 @@
             $_SESSION['is_logged'] = true;
             $_SESSION['user_id'] = $rows['id'];
             $_SESSION['name'] = $rows['name'];
+            $_SESSION['username'] = $rows['login'];
             header("location: ../pages/dashboard.php");
         } else {
             header("location: ../pages/login.php");

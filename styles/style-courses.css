@@ -111,3 +111,76 @@ body {
     scale: 1.03;
     box-shadow: 0px 0px 5px #ebc8ff;
 }
+
+.create-course-background {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000a9;
+    z-index: 5;
+}
+
+.create-course-background.active {
+    display: flex;
+}
+
+.create-course-background .create-course {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: auto;
+    width: 300px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.create-course-background .create-course #closeCreate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.create-course-background .create-course .header {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.create-course-background .create-course form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.create-course-background .create-course form input{
+    border: none;
+    background-color: #ececec;
+    border-radius: 8px;
+    width: 90%;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.create-course-background .create-course form .submit {
+    background-color: #d996ff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.create-course-background .create-course form .submit:hover{
+    background-color: #b97fdb;
+}

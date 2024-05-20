@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -25,5 +28,16 @@
             <button class="more-btn" id="createBtn">Create course</button>
         </div>
     </div>
+    <div class="create-course-background" id="create-course">
+        <div class="create-course">
+            <i class="ri-close-large-line" id="closeCreate"></i>
+            <div class="header">Create assignment</div>
+            <form action="../scripts/create-course.php" method="post">
+                <input type="text" name="title" placeholder="Title">
+                <input type="submit" value="Create" name="submit" class="submit">
+            </form>
+        </div>
+    </div>
+    <script src="../scripts/courses.js"></script>
 </body>
 </html>
