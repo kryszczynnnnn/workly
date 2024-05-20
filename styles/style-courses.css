@@ -65,30 +65,31 @@ body {
     background-color: #bbbbbb;
 }
 
-.container #lekcje .subjects .class {
+.container #lekcje .subjects form .class {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: none;
     min-height: 100px;
     min-width: 243px;
+    width: 99%;
     background-color: transparent;
     padding: 10px;
     box-shadow: 0px 0px 5px #0000004f;
     border-radius: 8px;
     cursor: pointer;
-    margin: 5px 3px;
+    margin: 5px 2px;
     overflow-x: hidden;
 }
 
-.container #lekcje .subjects .class .subject-title {
+.container #lekcje .subjects form .class .subject-title {
     font-weight: 500;
     text-align: left;
     font-size: 30px;
     width: 100%;
 }
 
-.container #lekcje .subjects .class div {
+.container #lekcje .subjects form .class div {
     display: flex;
     align-items: center;
     justify-content: space-between;

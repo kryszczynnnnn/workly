@@ -17,13 +17,15 @@
         <div id="lekcje">
             <span class="container-title">Courses</span>
             <ul class="subjects">
-                <button class="class">
-                    <span class="subject-title">Konstantynopolitańczykowianeczka</span>
-                    <div>
-                        <span>More</span>
-                        <span class="projects-amount">13<i class="ri-file-line"></i></span>
-                    </div>
-                </button>
+                <form action="../pages/course.php" method="get">
+                    <button class="class">
+                        <span class="subject-title">Konstantynopolitańczykowianeczka</span>
+                        <div>
+                            <span>More</span>
+                            <span class="projects-amount">13<i class="ri-file-line"></i></span>
+                        </div>
+                    </button>
+                </form>
             </ul>
             <button class="more-btn" id="createBtn">Create course</button>
         </div>
