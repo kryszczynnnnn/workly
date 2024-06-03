@@ -38,43 +38,6 @@ CREATE TABLE `assingments` (
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `c1`
---
-
-CREATE TABLE `c1` (
-  `user_id` int(11) NOT NULL,
-  `admin` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
-
---
--- Zrzut danych tabeli `c1`
---
-
-INSERT INTO `c1` (`user_id`, `admin`) VALUES
-(7, 1);
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `c35`
---
-
-CREATE TABLE `c35` (
-  `user_id` int(11) NOT NULL,
-  `username` text NOT NULL,
-  `admin` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
-
---
--- Zrzut danych tabeli `c35`
---
-
-INSERT INTO `c35` (`user_id`, `username`, `admin`) VALUES
-(7, 'abc', 1);
-
--- --------------------------------------------------------
-
---
 -- Struktura tabeli dla tabeli `courses`
 --
 
@@ -84,48 +47,6 @@ CREATE TABLE `courses` (
   `table_name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
---
--- Zrzut danych tabeli `courses`
---
-
-INSERT INTO `courses` (`course_id`, `name`, `table_name`) VALUES
-(34, 'dsfds', 'fsdafsa'),
-(35, 'test', 'c35');
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `u10`
---
-
-CREATE TABLE `u10` (
-  `course_id` int(11) NOT NULL,
-  `course_name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `u12`
---
-
-CREATE TABLE `u12` (
-  `course_id` int(11) NOT NULL,
-  `course_name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `u13`
---
-
-CREATE TABLE `u13` (
-  `course_id` int(11) NOT NULL,
-  `course_name` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
-
--- --------------------------------------------------------
 
 --
 -- Struktura tabeli dla tabeli `users`
@@ -141,20 +62,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
--- Zrzut danych tabeli `users`
---
-
-INSERT INTO `users` (`id`, `login`, `email`, `pass`, `name`, `surname`) VALUES
-(2, 'fgfsdg', 'gdfgfds@gmail.com', '5296810b80e2fedf74b10a1a3a7a7a1c', 'fdgdsfgsdf', 'gdsfgdsfgds'),
-(3, 'xdd', 'xdd@gmail.com', 'e0ec65fcfcf174244bc6201ec441d367', 'xdd', 'xdd'),
-(6, 'fgfdgfsdg', 'sggsdfsdg@gmail.com', '9248a89c9b3d9c536c26cf399f67da8b', 'fgsdfgsdfg', 'fdgsdfgdsgd'),
-(7, 'abc', 'abc@gmail.com', '900150983cd24fb0d6963f7d28e17f72', 'abc', 'abc'),
-(9, 'zzantic', 'krystian.tarnowski2115@gmail.com', '900150983cd24fb0d6963f7d28e17f72', 'Krystian', 'Tarnowski'),
-(11, 'fgsdfgfd', 'gfsjg@gmail.com', '4a731de85feeea7642277820a8bc6d97', 'gdfgdfsgdsf', 'gdfgdfgdsf'),
-(12, 'fdasfasd', 'fasfa@gmail.com', '6e175369b28341ad5408c1057535290e', 'fdsfasdf', 'dsafasdfasd'),
-(14, 'dgfsvbsdfds', 'uigfdoashl@gmail.com', 'c776ec89881ca075db553da2a1915d92', 'vcbxcvbdgfsh', 'dljfguihewj;');
-
---
 -- Indeksy dla zrzutów tabel
 --
 
@@ -163,12 +70,6 @@ INSERT INTO `users` (`id`, `login`, `email`, `pass`, `name`, `surname`) VALUES
 --
 ALTER TABLE `assingments`
   ADD PRIMARY KEY (`id`);
-
---
--- Indeksy dla tabeli `c35`
---
-ALTER TABLE `c35`
-  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indeksy dla tabeli `users`
