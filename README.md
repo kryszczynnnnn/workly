@@ -23,10 +23,12 @@ Workly to platforma, która pomaga pracodawcom, nauczycielom i wielu innym ludzi
 
 # Aktualny stan
 
-Workly jest w chwili obecnej w fazie testów i ma wiele nie dociągnięć, dlatego prosimy każdego użytkownika o podzielenie się swoją opinią z nami. 
-W przypadku występowania jakiś błędów na stornie, również prosimy aby zgłaszać takie sytuajce.
-Workly aktualnie znajduje się w stanie Beta i dostęp do platformy na ten moment ograniczony i dostępny dla zamkniętej grupy osoób.
-Po wszystkich testach i zwalczeniu wszystkich problemów tj. zmniejszeniu lub wyeliminowaniu błędów na stronie - Workly zostanie udostępnione bez żadnych ograniczeń.
+```WORKLY NA TEN MOMENT NIE ZOSTAŁO WYDANE DO UŻYTKU PUBLICZNEGO``` <br>
+Workly jest w chwili obecnej w fazie testów i ma wiele nie dociągnięć. 
+**Gdy Workly otworzy zmkniętą bete**
+* W przypadku występowania jakiś błędów na stornie, również prosimy aby zgłaszać takie sytuajce.
+* Dostęp do platformy będzie ograniczony i dostępny dla zamkniętej grupy osoób.
+* Po wszystkich testach i zwalczeniu wszystkich problemów tj. zmniejszeniu lub wyeliminowaniu błędów na stronie - Workly zostanie udostępnione bez żadnych ograniczeń.
 
 # Autor
 
